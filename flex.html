@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <style>
+        /* Class Selector */
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* ID Selector */
+        #special-product {
+            background-color: #f9f9f9;
+            border-color: #ffcc00;
+        }
+
+        /* Attribute Selector */
+        .product[data-category="electronics"] {
+            background-color: #e6f7ff;
+        }
+
+        .product[data-category="clothing"] {
+            background-color: #ffe6e6;
+        }
+
+        .product[data-category="home"] {
+            background-color: #e6ffe6;
+        }
+
+        /* Image Styling */
+        .product img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        /* Text Styling */
+        .product h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .product p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product List</h1>
+
+    <div class="product" id="special-product" data-category="electronics">
+        <img src="samsung-1283938.jpg" alt="Smartphone">
+        <div>
+            <h2>Smartphone</h2>
+            <p>A high-end smartphone with the latest features.</p>
+        </div>
+    </div>
+
+    <div class="product" data-category="clothing">
+        <img src="t-shirt-1524677.jpg" alt="T-Shirt">
+        <div>
+            <h2>T-Shirt</h2>
+            <p>A comfortable and stylish t-shirt for everyday wear.</p>
+        </div>
+    </div>
+
+    <div class="product" data-category="home">
+        <img src="lamp-2903830.jpg" alt="Desk Lamp">
+        <div>
+            <h2>Desk Lamp</h2>
+            <p>A modern desk lamp with adjustable brightness.</p>
+        </div>
+    </div>
+
+    <div class="product" data-category="electronics">
+        <img src="laptop-1483974.jpg" alt="Laptop">
+        <div>
+            <h2>Laptop</h2>
+            <p>A powerful laptop for work and entertainment.</p>
+        </div>
+    </div>
+
+    <div class="product" data-category="clothing">
+        <img src="jeans-6749852.jpg" alt="Jeans">
+        <div>
+            <h2>Jeans</h2>
+            <p>Durable and fashionable jeans for all occasions.</p>
+        </div>
+    </div>
+</body>
+</html>
