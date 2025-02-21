@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prevent Form Submission</title>
+</head>
+<style>
+   body{
+    background-color: plum;
+    text-align: center;
+   }
+
+</style>
+<body>
+    <form id="myForm">
+        <label for="name">Full Name:</label> <br/>
+        <input type="text" name="name" placeholder="Enter your name">
+        <br/>
+        <label for="email">Email:</label> <br/>
+        <input type="email" email="name" placeholder="Enter your email">
+        <br/>
+        <button type="submit">Submit</button><br/>
+    </form>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submission prevented!');
+        });
+    </script>
+</body>
+</html>
